@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seater"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Name"
+
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/black1"
+            android:id="@+id/name"
+
+            android:background="@drawable/edit1"
+            android:layout_marginLeft="10dp"
+           android:paddingLeft="5dp"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Email Id"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/black1"
+            android:id="@+id/email"
+
+            android:background="@drawable/edit1"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Mobile Number"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/black1"
+            android:id="@+id/mobilenumber"
+            android:background="@drawable/edit1"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="10dp"
+            android:text="Source Point"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="217dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit1"
+            android:gravity="center"
+           android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@color/black1"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="10dp"
+            android:text="Destination Point"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="209dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit1"
+          android:paddingLeft="5dp"
+            android:text=""
+
+            android:gravity="center"
+            android:textColor="@color/black1"
+            android:id="@+id/destination"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Postal Code"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit1"
+            android:padding="5dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/black1"
+            android:id="@+id/pincode"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Distance"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit1"
+            android:padding="5dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/black1"
+            android:id="@+id/distance"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Travelling Type"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit1"
+            android:padding="5dp"
+            android:textColor="@color/black1"
+            android:text=""
+            android:gravity="center"
+            android:id="@+id/travlemethod"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:text="No of Vehicle"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit1"
+                android:padding="5dp"
+                android:textColor="@color/black1"
+                android:text=""
+                android:gravity="center"
+                android:id="@+id/noofvehicle"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Date"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit1"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text=""
+            android:id="@+id/date"
+            android:textColor="@color/black1"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Time"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit1"
+            android:padding="5dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/black1"
+            android:id="@+id/time"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:text="Waiting Timing"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit1"
+                android:padding="5dp"
+                android:textColor="@color/black1"
+                android:text=""
+                android:gravity="center"
+                android:id="@+id/waitingtime"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:text="Price Per Km"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit1"
+                android:padding="5dp"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/black1"
+                android:id="@+id/priceperkm"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Total Price"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/edit1"
+              android:paddingLeft="5dp"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/black1"
+                android:id="@+id/totalprice"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="-> 20 % pay on Booking time and then conform your booking"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="-> 80 % pay when vehicle arrive in your Source address "
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="-> response within 10 minuts in your mobile and email"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit1"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/fifteen"
+                android:textSize="19sp"  />
+
+            <Button
+                android:layout_width="187dp"
+                android:layout_height="40dp"
+
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit1"
+                android:padding="5dp"
+                android:id="@+id/payment"
+                android:layout_margin="10dp"
+                android:text="Payment"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="187dp"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit1"
+            android:padding="5dp"
+            android:id="@+id/read"
+            android:layout_margin="10dp"
+            android:text="read"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

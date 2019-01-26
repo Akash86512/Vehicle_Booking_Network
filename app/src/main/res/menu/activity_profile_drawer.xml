@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Aboutus"
+            android:icon="@drawable/ic_menu_send"
+            android:title="About Us" />
+        <item
+            android:id="@+id/business"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Business with sunsky cabs" />
+        <item
+            android:id="@+id/tracking"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Tracking" />
+        <item
+            android:id="@+id/transaction"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Transaction" />
+
+        <item
+            android:id="@+id/complain"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Complain" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Help(24*7)" />
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Share" />
+        <item
+            android:id="@+id/rateus"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/updateus"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Update us" />
+
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Contact" />
+        <item
+            android:id="@+id/developer"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Developer" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+        </menu>
+    </item>
+
+</menu>

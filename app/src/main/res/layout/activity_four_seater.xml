@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FourSeater">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Source Point "
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/sourcepoint"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edit1"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+
+            <TextView
+
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Destination Point "
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/destinationpoint"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edit1"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:inputType="text"
+
+                android:textSize="20sp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 4 Seater Booking "
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Enter Pin Code"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+
+                    android:id="@+id/autocomplete_places"
+                    android:layout_width="178dp"
+
+                    android:inputType="number"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:background="@drawable/edit1"
+                    android:padding="5dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Avilabilty"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/avibality"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edit1"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Distance"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/distance"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edit1"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="No of Vehicle"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/noofcar"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edit1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/normalcar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Normal Bus"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/luxurycar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Luxury Bus"
+                        android:textSize="20sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/oneway"
+                        android:layout_width="155dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="One Way"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/roundtrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Round Trip"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Price/KM"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/priceperkm"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edit1"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+
+                    android:text="Price"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/totalprice"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edit1"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Waiting Time"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/waitingtime"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edit1"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="datetime" />
+
+            <TimePicker
+                android:id="@+id/timepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:inputType="datetime" />
+
+
+            <Button
+
+                android:id="@+id/booknow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="BOOK NOW "
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
